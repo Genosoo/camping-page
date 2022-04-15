@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Open+Sans&family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #034b61;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    width:50px;
+    height:50px;
+    background:#fff;
+    border-radius:50%;
+    box-shadow:0 0 3px 5px #fcce0073;
+    transition-duration:500ms;
+}
+.logo:hover{
+    box-shadow: 0 0 3px 7px #fed51c;
+}
+.container{
+    background-image: url('./images/camping-minimalism-4k-5w.jpg');
+    background-size:cover;
+    background-position:center;
+    width:80%;
+    height:90vh;
+    border-radius:10px;
+    box-shadow:3px 0 5px 2px rgba(0, 0, 0, 0.26);
+}
+
+nav .fas{
+    display: none;
+}
+
+.nav-links ul{
+    margin-right: 5%;
+}
+
+.nav-links ul li{
+    list-style: none;
+}
+
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    margin:5px;
+    padding:5px 15px;
+    transition-duration: 500ms;
+}
+.nav-links ul li a:hover{
+    background:rgba(0, 0, 0, 0.897);
+    box-shadow: 0 0 3px 1px #000000e1;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:20%;
+    color:#fff;
+}
+
+nav ul{
+    display: flex;
+}
+
+.box1{
+    display: flex;
+    align-items: center;
+}
+
+.box1 a{
+    margin: 10px;
+}
+
+.btn1{
+    text-decoration: none;
+    color:#fff;
+}
+.btn2{
+    color: #000;
+    text-decoration: none;
+    background:#fed51c;
+    padding:6px 10px;
+    border-radius:5px;
+    transition-duration: 500ms;
+}
+
+.btn2:hover{
+    background:#000;
+    color:#fff;
+}
+
+.content{
+    height:70%;
+    width:80%;
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.detail h1{
+    font-family: 'IM Fell English SC', serif;
+    font-size: 4rem;
+    color:#fed51c;
+    text-shadow:0 2px 4px #000;
+}
+
+.detail a{
+    background:#fff;
+    color:#000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius:10px;
+    position: relative;
+    top:7%;
+    transition-duration: 500ms;
+    font-size: .9rem;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.705);
+}
+.detail a:hover{
+    background:#000;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.p1{
+    text-transform:uppercase;
+    word-spacing:10px;
+    letter-spacing:3px;
+    color: #fff;
+    text-shadow: 0 2px 2px #000;
+    font-weight:800;
+    font-size:12px;
+    margin-left:2%;
+}
+
+.p2{
+    margin-left:2%;
+    color:#fff;
+    text-shadow:0 2px 2px #000;
+}
+
+
+
+/* responsive */
+@media(max-width: 850px){
+    .logo{
+        display:none;
+    }
+    .detail h1{
+        font-size: 3rem;
+    }
+    .nav-links a:hover{
+        transition-duration:500ms;
+        padding:none;
+        background:#fff;
+    }
+    .nav-links{
+        z-index: 1;
+        position: absolute;
+        background:#1d3d56;
+        height:90vh;
+        width:200px;
+        top:5%;
+        left: -200px;
+        text-align: left;
+        transition-duration: 500ms;
+        overflow: hidden;
+    }
+    nav .fas{
+        display: block;
+        color:#fff;
+        margin:10px;
+        font-size:22px;
+        cursor: pointer;
+    }
+
+    nav .fa-window-close{
+        display: flex;
+        justify-content: end;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        margin:10%;
+    }
+    .nav-links ul li{
+        margin: 20px;
+
+    }
+   
+}
